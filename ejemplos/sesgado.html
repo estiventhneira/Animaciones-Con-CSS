@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformacion 2</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        perspective: 200px;
+        /* perspective-origin: center; */
+      }
+      .container {
+        border: 1px solid red;
+      }
+      /* TAMBIEN SE PUEDE APLICAR DIRECTAMENTEN AL HOVER DEL CUADRADO */
+      .container:hover .cuadrado {
+        /* transform: translate(ejeX, ejeY); */
+        /* transform: translate(100px, 100px); */
+        /* transform: translateZ(100px); */
+        /* transform: translate3d(100px, 100px, 100px); */
+        /* transform: scale(x, y); */
+        /* transform: scale(3); */ /* rangos del 0 al 1 */
+        /* transform: scale(3, 1); */
+        /* transform: skew(x, y); */
+        /* transform: skew(55deg, 55deg); */
+        transform: skew(10deg, 10deg);
+      }
+      .cuadrado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        background-color: #7dc900;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cuadrado">Hola Mundo</div>
+    </div>
+  </body>
+</html>
