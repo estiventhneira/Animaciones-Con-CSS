@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformacion 2</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        border: 1px solid red;
+      }
+      /* tMBIEN SE PUEDE APLICAR DIRECTAMENTEN AL HOVER DEL CUADRADO */
+      .container:hover .cuadrado {
+        /* es igual a rotateZ stransform: rotate(360deg); */
+        /* transform: rotateX(360deg); */
+        /* ransform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); */
+        transform: rotate3d(2, 2, 2, 360deg);
+      }
+      .cuadrado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        background-color: #7dc900;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cuadrado">Hola Mundo</div>
+    </div>
+  </body>
+</html>

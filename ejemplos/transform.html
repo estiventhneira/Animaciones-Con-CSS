@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trancisiones CSS</title>
     <style>
+      body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
       .pelota {
         height: 100px;
         width: 100px;
@@ -27,7 +34,9 @@
       .canasta {
         border: 1px solid red;
         position: relative;
-        height: 200px;
+        height: 100px;
+        width: 100%;
+        transform: rotate(20deg) skew(10deg) translate(0px) scale(1.5);
       }
 
       .canasta:hover .pelota.a {
